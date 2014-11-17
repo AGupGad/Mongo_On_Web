@@ -1,0 +1,43 @@
+<HTML>
+<head>
+<script src="js/dojo-release-1.10.2/dojo/dojo.js"></script>
+<style type="text/css">
+@import "http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/resources/dojo.css";
+@import "http://ajax.googleapis.com/ajax/libs/dojo/1.5/dijit/themes/claro/claro.css";
+</style>
+
+</head>
+<BODY class="claro">
+
+
+<form method="post" action="./PersonSave"  id="myForm" enctype="multipart/form-data" >
+<table style="border: 1px solid #9f9f9f;">
+        <tr>
+            <td>
+                <label for="fname">First Name:</label>
+            </td>
+            <td>
+                <input type="text" id="firstname" name="firstname" size = 20 data-dojo-type="dijit/form/ValidationTextBox"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="lname">Last Name:</label>
+            </td>
+            <td>
+                <input type="text" id="lastname" name="lastname" size = 20 data-dojo-type="dijit/form/ValidationTextBox"/>
+            </td>
+        <tr>
+        	<td>
+        		<label for="fileupload">Choose File:</label>
+        	</td>
+        	<td>
+        	<input type="file" name="datafile" size="40" data-dojo-type="dojox.form.Uploader">
+        	</td>
+      </tr>
+       </table>
+    <button data-dojo-type="dijit/form/Button" type="submit" name="submitButton" value="Submit">Submit</button>
+    
+</form>
+</BODY>
+</HTML>
